@@ -1,48 +1,51 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color: #2c1a1a;
+    color: white;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
 }
 
-.container {
-    text-align: center;
-    background: #fff;
-    padding: 20px 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+.profile {
+    margin-top: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
 }
 
 h1 {
     font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
+    margin: 5px 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: gray;
 }
 
 .links {
-    list-style: none;
-    padding: 0;
+    margin-top: 20px;
 }
 
-.links li {
-    margin: 10px 0;
-}
-
-.links a {
+.link {
+    display: block;
+    background-color: #3d3d3d;
+    color: white;
     text-decoration: none;
-    font-size: 18px;
-    color: #007BFF;
-    padding: 10px 20px;
-    border: 1px solid #007BFF;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
-.links a:hover {
-    background-color: #007BFF;
-    color: #fff;
+.link:hover {
+    background-color: #575757;
 }
