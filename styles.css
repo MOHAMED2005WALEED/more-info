@@ -125,6 +125,11 @@ h1 {
   font-weight: bold;
 }
 
+.links a i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 .youtube iframe {
     width: 100%;
     height: 250px;
