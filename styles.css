@@ -472,7 +472,7 @@ h1 {
     	position: absolute;
     	width: 300px;
     	height: 200px;
-    	background: #4caf50;
+    	/*background: #4caf50;*/
     	color: white;
     	display: flex;
     	justify-content: center;
