@@ -957,6 +957,20 @@ h1 {
     		border-color: #4caf50;
 	}
 
+.thumbnail {
+    width: 80px;
+    height: 50px;
+    background: #ddd;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    transition: transform 0.3s, border 0.3s;
+}
+
 .thumbnail:hover {
     transform: scale(1.2); /* Slight zoom effect on hover */
     border-color: #4caf50;
