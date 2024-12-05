@@ -208,7 +208,7 @@ ul li {
 
 .certificate-img {
     opacity: 1.0;
-    max-width: auto;
+    max-width: 100%;
     height: auto;
     margin-top: 10px;
 }
@@ -904,7 +904,7 @@ h1 {
     		background: #333;
 	}
 
-	/*.thumbnails {
+	.thumbnails {
     		display: flex;
     		flex-wrap: wrap; 
     		justify-content: center;
@@ -916,7 +916,7 @@ h1 {
     		max-width: 100%; 
     		overflow: hidden; 
     		z-index: 0; 
-	}*/
+	}
 
 	@media (max-width: 768px) {
     		.thumbnails {
