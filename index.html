@@ -487,6 +487,14 @@
         // Initialize the first certificate and thumbnail
         certificates[currentIndex].classList.add('show');
         thumbnails[currentIndex].classList.add('active');
+        
+		const thumbnailss = document.querySelectorAll('.thumbnail');
+			thumbnailss.forEach((thumbnail, index) => {
+    			thumbnail.addEventListener('click', () => {
+        			thumbnails.forEach((thumb) => thumb.classList.remove('active'));
+        			thumbnail.classList.add('active');
+    			});
+			});
     </script>
     </section>
     </section>    
