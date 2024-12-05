@@ -472,11 +472,12 @@ h1 {
     	position: absolute;
     	width: 70%;
     	height: 200px;
+    	display: flex;
     	/*background: #4caf50;
-    	color: white;*/
+    	color: white;
     	display: flex;
     	justify-content: center;
-    	align-items: center;
+    	align-items: center;*/
     	font-size: 1.2em;
     	border-radius: 10px;
     	transform: scale(0) translateX(100%);
