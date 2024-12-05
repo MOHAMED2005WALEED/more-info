@@ -904,18 +904,18 @@ h1 {
     		background: #333;
 	}
 
-	.thumbnails {
+	/*.thumbnails {
     		display: flex;
-    		flex-wrap: wrap; /* Allows thumbnails to wrap to the next line if they exceed the width */
+    		flex-wrap: wrap; 
     		justify-content: center;
     		gap: 10px;
     		margin-top: 20px;
     		position: absolute;
     		bottom: 20px;
     		margin-top: 20px;
-    		max-width: 100%; /* Ensures the thumbnails stay within the page width */
-    		overflow: hidden; /* Prevents overflow from appearing outside the container */
-    		z-index: 0; /* Ensure thumbnails are beneath certificates */
+    		max-width: 100%; 
+    		overflow: hidden; 
+    		z-index: 0; 
 	}
 
 	@media (max-width: 768px) {
@@ -923,7 +923,7 @@ h1 {
         		flex-wrap: wrap;
         		justify-content: space-around;
     		}
-	}
+	}*/
 
 	/*.thumbnail {
     		width: 80px;
@@ -939,10 +939,10 @@ h1 {
     		transition: border 0.3s;
 	}*/
 
-	.thumbnail img {
+	/*.thumbnail img {
     		width: 80px;
     		height: 50px;
-    		/*background: #ddd;*/
+    		background: #ddd;
     		border: 2px solid transparent;
     		border-radius: 5px;
     		cursor: pointer;
@@ -955,12 +955,12 @@ h1 {
 
 	.thumbnail img.active {
     		border-color: #4caf50;
-	}
+	}*/
 
-.thumbnail {
+.thumbnail img {
     width: 80px;
     height: 50px;
-    background: #ddd;
+    /*background: #ddd;*/
     border: 2px solid transparent;
     border-radius: 5px;
     cursor: pointer;
@@ -971,12 +971,12 @@ h1 {
     transition: transform 0.3s, border 0.3s;
 }
 
-.thumbnail:hover {
+.thumbnail img:hover {
     transform: scale(1.2); /* Slight zoom effect on hover */
     border-color: #4caf50;
 }
 
-.thumbnail.active {
+.thumbnail img.active {
     animation: zoomIn 0.8s ease-in-out forwards;
 }
 
