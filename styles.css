@@ -535,6 +535,60 @@ h1 {
 	.ccertificate:nth-child(12).show {
    		animation: honeycomb3 1s 0.4s forwards;
 	}
+	.ccertificate:nth-child(13).show {
+    	animation: honeycomb1 1s forwards;
+	}
+
+	.ccertificate:nth-child(14).show {
+    	animation: honeycomb2 1s 0.2s forwards;
+	}
+
+	.ccertificate:nth-child(15).show {
+   		animation: honeycomb3 1s 0.4s forwards;
+	}
+	.ccertificate:nth-child(16).show {
+    	animation: honeycomb1 1s forwards;
+	}
+
+	.ccertificate:nth-child(17).show {
+    	animation: honeycomb2 1s 0.2s forwards;
+	}
+
+	.ccertificate:nth-child(18).show {
+   		animation: honeycomb3 1s 0.4s forwards;
+	}
+	.ccertificate:nth-child(19).show {
+    	animation: honeycomb1 1s forwards;
+	}
+
+	.ccertificate:nth-child(20).show {
+    	animation: honeycomb2 1s 0.2s forwards;
+	}
+
+	.ccertificate:nth-child(21).show {
+   		animation: honeycomb3 1s 0.4s forwards;
+	}
+	.ccertificate:nth-child(22).show {
+    	animation: honeycomb1 1s forwards;
+	}
+
+	.ccertificate:nth-child(23).show {
+    	animation: honeycomb2 1s 0.2s forwards;
+	}
+
+	.ccertificate:nth-child(24).show {
+   		animation: honeycomb3 1s 0.4s forwards;
+	}
+	.ccertificate:nth-child(25).show {
+   		animation: honeycomb3 1s 0.4s forwards;
+	}
+	.ccertificate:nth-child(26).show {
+    	animation: honeycomb1 1s forwards;
+	}
+
+	.ccertificate:nth-child(27).show {
+    	animation: honeycomb2 1s 0.2s forwards;
+	}
 
 	/* Animation for Honeycomb Pattern */
 	@keyframes honeycomb1 {
