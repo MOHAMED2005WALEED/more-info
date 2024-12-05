@@ -956,3 +956,24 @@ h1 {
 	.thumbnail img.active {
     		border-color: #4caf50;
 	}
+
+.thumbnail:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    border-color: #4caf50;
+}
+
+.thumbnail.active {
+    animation: zoomIn 0.8s ease-in-out forwards;
+}
+
+/* Animation for the zoom-in effect */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8) translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
