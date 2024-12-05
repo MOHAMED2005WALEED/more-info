@@ -504,90 +504,90 @@ h1 {
    		animation: honeycomb3 1s 0.4s forwards;
 	}
 	.ccertificate:nth-child(4).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 1s 0.6s forwards;
 	}
 
 	.ccertificate:nth-child(5).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 1s 0.8s forwards;
 	}
 
 	.ccertificate:nth-child(6).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 2s forwards;
 	}
 	.ccertificate:nth-child(7).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 2s 0.2s forwards;
 	}
 
-	.ccertificate:nth-child(3).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+	.ccertificate:nth-child(8).show {
+    	animation: honeycomb2 2s 0.4s forwards;
 	}
 
 	.ccertificate:nth-child(9).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 2s 0.6s forwards;
 	}
 	.ccertificate:nth-child(10).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 2s 0.8s forwards;
 	}
 
 	.ccertificate:nth-child(11).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 3s forwards;
 	}
 
 	.ccertificate:nth-child(12).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 3s 0.2s forwards;
 	}
 	.ccertificate:nth-child(13).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 3s 0.4s forwards;
 	}
 
 	.ccertificate:nth-child(14).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 3s 0.6s forwards;
 	}
 
 	.ccertificate:nth-child(15).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 3s 0.8s forwards;
 	}
 	.ccertificate:nth-child(16).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 4s forwards;
 	}
 
 	.ccertificate:nth-child(17).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 4s 0.2s forwards;
 	}
 
 	.ccertificate:nth-child(18).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 4s 0.4s forwards;
 	}
 	.ccertificate:nth-child(19).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 4s 0.6s forwards;
 	}
 
 	.ccertificate:nth-child(20).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 4s 0.8s forwards;
 	}
 
 	.ccertificate:nth-child(21).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 5s forwards;
 	}
 	.ccertificate:nth-child(22).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 5s 0.2s forwards;
 	}
 
 	.ccertificate:nth-child(23).show {
-    	animation: honeycomb2 1s 0.2s forwards;
+    	animation: honeycomb2 5s 0.4s forwards;
 	}
 
 	.ccertificate:nth-child(24).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 5s 0.6s forwards;
 	}
 	.ccertificate:nth-child(25).show {
-   		animation: honeycomb3 1s 0.4s forwards;
+   		animation: honeycomb3 5s 0.8s forwards;
 	}
 	.ccertificate:nth-child(26).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 6s forwards;
 	}
 	.ccertificate:nth-child(27).show {
-    	animation: honeycomb1 1s forwards;
+    	animation: honeycomb1 6s 0.2s forwards;
 	}
 
 
