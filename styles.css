@@ -1,20 +1,342 @@
-body {
+/* General Reset and Global Styles */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #F5F5F5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    font-family: 'Arial', sans-serif;
+    background-color: #061528;
+    color: white;
+    margin: 0;
+    padding: 0;
+    opacity: 1.0;
+    text-shadow: 2px 2px 4px #111111;
 }
 
 .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');
+    border: 2px solid rgba(255,255,255,.2);
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    color: white;
     text-align: center;
-    max-width: 600px;
-    background: #ffffff;
+    padding: 100px 20px;
+    position: relative;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    z-index: 2; /* Ensures that the text and profile picture are above the background */
+}
+
+.profile-img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+.section {
+    /*background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');*/
+    border: 2px solid rgba(255,255,255,.2);
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*background-color: #ECE9F4;*/
+    opacity: 1.0;
+    padding: 60px 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    filter: none;
+    opacity: 1.0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #76A5AF;
+}
+
+ul {
+    opacity: 1.0;
+    list-style-type: none;
+}
+
+ul li {
+    opacity: 1.0;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.certificates {
+    opacity: 1.0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certification-list {
+    opacity: 1.0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.certification {
+    border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*filter: blur(9px);*/
+    opacity: 1.0;
+    /*background-color: #ECE9F4;*/
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Card Hover Effect */
+.certification:hover::before {
+    transform: scale(1.05);
+}
+
+.certification h2 {
+    opacity: 1.0;
+    font-size: 20px;
+    color: #76A5AF;
+}
+
+.certification p {
+    opacity: 1.0;
+    color: white;
+}
+
+.ddownload-link {
+    opacity: 1.0;
+    display: inline-block;
+    background: linear-gradient(to right,
+                                #1345e6 0%, #1345e6 25%, #ed239f 75%,#ed239f 51%, #1345e6 100%,#1345e6 50%,
+                                #1345e6 0%, #1345e6 25%, #ed239f 75%,#ed239f 51%, #1345e6 100%,#1345e6 50%);
+    color: #fff;
+    letter-spacing: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 25px;
+    /*padding: 0 38px;
+    font-size: 14px;*/
+    outline: none !important;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-size: 200% auto;
+    text-decoration: none;
+    
+    margin-top: 7px;
+    padding: 10px 15px;
+    /*background-color: #4CAF50;*/
+    /*content: "";
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;*/
+    
+    position: absolute;
+    z-index: -1;
+    /*top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);*/
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    background-size: 600%;
+    /*filter: blur(8px);*/
+    /*border-radius: 10px;*/
+    /*opacity: 0;*/
+}
+
+/*@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}*/
+
+/*.ddownload-link:hover::before {
+    opacity: 1.0;
+    background-color: #45a049;
+}*/
+
+.certificate-img {
+    opacity: 1.0;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #ECE9F4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    border: 2px solid rgba(,,,.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+a {
+    opacity: 1.0;
+    color: #BBD2D7;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #111111;
+}
+
+a:hover {
+    opacity: 1.0;
+    text-decoration: underline;
+}
+/* button */
+.download-link {
+  display: inline-block;  
+  text-decoration: none;  
+  margin-top: 3px;
+  /*margin: 100px;*/
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+}
+.download-link::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* glow */
+.download-link::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #FF0000, #FF7300, #FFFB00, #48FF00,
+    #00FFD5, #002BFF, #FF00C8, #FF0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height:  calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% {background-position: 0 0;}
+  50% {background-position: 400% 0;}
+  100% {background-position: 0 0;}
+}
+
+/* hover */
+.download-link:hover::before {
+  opacity: 1;
+}
+
+.download-link:active:after {
+  background: transparent;
+}
+
+.download-link:active {
+  color: #000;
+  font-weight: bold;
+}
+
+.ssection {
+    /*background-image: url('https://www.cisco.com/content/dam/cisco-cdc/site/images/heroes/solutions/hp-header-ai-animation-tablet-v2-2048x1500.jpg');*/
+    border: 2px solid rgba(255,255,255,.2);
+    background-size: cover;                /* Ensures the image covers the entire header */
+    background-position: center center;    /* Centers the background image */
+    background-attachment: fixed;          /* Keeps the background fixed when scrolling */
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*background-color: #ECE9F4;*/
+    opacity: 1.0;
+    padding: 60px 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.ccontainer {
+    text-align: center;
+    border: 2px solid rgba(255,255,255,.2);
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(10px);
+    /*background: #ffffff;*/
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
 }
 
@@ -28,13 +350,15 @@ body {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
     margin-bottom: 5px;
 }
 
 .bio {
     font-size: 14px;
-    color: #666;
+    color: white;
+    text-shadow: 2px 2px 4px #888888;
     margin-bottom: 20px;
 }
 
@@ -78,7 +402,12 @@ h1 {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #333;
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);  
+  border: 2px solid rgba(255,255,255,0.2);
+  border-radius: 5px;  
+  /*background-color: #333;*/
   left: 0;
   top: 0;
   border-radius: 10px;
