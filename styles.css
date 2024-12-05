@@ -904,6 +904,7 @@ h1 {
 	}
 
 	.thumbnails {
+    		position: absolute;
     		display: flex;
     		justify-content: center;
     		gap: 10px;
