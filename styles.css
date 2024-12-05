@@ -926,6 +926,19 @@ h1 {
     		font-size: 0.8em;
     		transition: border 0.3s;
 	}
+	.thumbnail img {
+    		width: 80px;
+    		height: 50px;
+    		/*background: #ddd;*/
+    		border: 2px solid transparent;
+    		border-radius: 5px;
+    		cursor: pointer;
+    		display: flex;
+    		justify-content: center;
+    		align-items: center;
+    		font-size: 0.8em;
+    		transition: border 0.3s;
+	}
 
 	.thumbnail.active {
     		border-color: #4caf50;
