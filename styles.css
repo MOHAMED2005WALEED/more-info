@@ -925,10 +925,10 @@ h1 {
     		}
 	}
 
-	.thumbnail {
+	/*.thumbnail {
     		width: 80px;
     		height: 50px;
-    		/*background: #ddd;*/
+    		background: #ddd;
     		border: 2px solid transparent;
     		border-radius: 5px;
     		cursor: pointer;
@@ -937,7 +937,8 @@ h1 {
     		align-items: center;
     		font-size: 0.8em;
     		transition: border 0.3s;
-	}
+	}*/
+
 	.thumbnail img {
     		width: 80px;
     		height: 50px;
@@ -952,6 +953,6 @@ h1 {
     		transition: border 0.3s;
 	}
 
-	.thumbnail.active {
+	.thumbnail img.active {
     		border-color: #4caf50;
 	}
