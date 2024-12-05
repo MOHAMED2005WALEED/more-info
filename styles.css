@@ -905,14 +905,24 @@ h1 {
 	}
 
 	.thumbnails {
-    		position: absolute;
     		display: flex;
+    		flex-wrap: wrap; /* Allows thumbnails to wrap to the next line if they exceed the width */
     		justify-content: center;
     		gap: 10px;
     		margin-top: 20px;
     		position: absolute;
     		bottom: 20px;
+    		margin-top: 20px;
+    		max-width: 100%; /* Ensures the thumbnails stay within the page width */
+    		overflow: hidden; /* Prevents overflow from appearing outside the container */
     		z-index: 0; /* Ensure thumbnails are beneath certificates */
+	}
+
+	@media (max-width: 768px) {
+    		.thumbnails {
+        		flex-wrap: wrap;
+        		justify-content: space-around;
+    		}
 	}
 
 	.thumbnail {
