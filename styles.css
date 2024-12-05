@@ -586,9 +586,6 @@ h1 {
     	animation: honeycomb1 1s forwards;
 	}
 
-	.ccertificate:nth-child(27).show {
-    	animation: honeycomb2 1s 0.2s forwards;
-	}
 
 	/* Animation for Honeycomb Pattern */
 	@keyframes honeycomb1 {
@@ -710,6 +707,155 @@ h1 {
 	}
 
 	@keyframes honeycomb12 {
+    	0% {
+        	transform: scale(0) translateY(-100%);
+       		opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateY(0);
+        	opacity: 1;
+    	}
+	}
+	@keyframes honeycomb13 {
+    	0% {
+        	transform: scale(0) translateX(100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb14 {
+    	0% {
+        	transform: scale(0) translateX(-100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb15 {
+    	0% {
+        	transform: scale(0) translateY(-100%);
+       		opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateY(0);
+        	opacity: 1;
+    	}
+	}
+	@keyframes honeycomb16 {
+    	0% {
+        	transform: scale(0) translateX(100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb17 {
+    	0% {
+        	transform: scale(0) translateX(-100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb18 {
+    	0% {
+        	transform: scale(0) translateY(-100%);
+       		opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateY(0);
+        	opacity: 1;
+    	}
+	}
+	@keyframes honeycomb19 {
+    	0% {
+        	transform: scale(0) translateX(100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb20 {
+    	0% {
+        	transform: scale(0) translateX(-100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb21 {
+    	0% {
+        	transform: scale(0) translateY(-100%);
+       		opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateY(0);
+        	opacity: 1;
+    	}
+	}
+	@keyframes honeycomb22 {
+    	0% {
+        	transform: scale(0) translateX(100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb23 {
+    	0% {
+        	transform: scale(0) translateX(-100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb24 {
+    	0% {
+        	transform: scale(0) translateY(-100%);
+       		opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateY(0);
+        	opacity: 1;
+    	}
+	}
+	@keyframes honeycomb25 {
+    	0% {
+        	transform: scale(0) translateX(-100%);
+        	opacity: 0;
+    	}
+    	100% {
+        	transform: scale(1) translateX(0);
+        	opacity: 1;
+    	}
+	}
+
+	@keyframes honeycomb26 {
     	0% {
         	transform: scale(0) translateY(-100%);
        		opacity: 0;
