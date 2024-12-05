@@ -209,7 +209,7 @@ ul li {
 .certificate-img {
     opacity: 1.0;
     max-width: auto;
-    height: 500px;
+    height: auto;
     margin-top: 10px;
 }
 
