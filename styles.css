@@ -896,9 +896,11 @@ h1 {
 	.nav-buttons {
   		display: flex;
   		justify-content: space-between;
-   		width: 80%;
-   		margin: 30% 0;
+   		width: 90%;
+   		margin: 0% 0;
    	 	z-index: 2;
+		align-content: center;
+    		flex-wrap: wrap;
 	}
 
 	.button {
