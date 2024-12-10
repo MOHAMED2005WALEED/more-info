@@ -926,7 +926,7 @@ h1 {
     		gap: 10px;
     		position: absolute;
     		bottom: 22px;
-    		top: 900px;
+    		/*top: 900px;*/
     		max-width: 100%; 
     		overflow: hidden; 
     		z-index: 3; 
