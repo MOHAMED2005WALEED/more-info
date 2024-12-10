@@ -488,7 +488,7 @@ h1 {
     	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     	opacity: 0;
     	z-index: 1;
-	top: 25px;
+	/*top: 25px;*/
     	bottom: 150px;
 	}
 
