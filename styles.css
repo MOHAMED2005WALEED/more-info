@@ -488,8 +488,8 @@ h1 {
     	transition: transform 1s ease-in-out, opacity 1s ease-in-out;
     	opacity: 0;
     	z-index: 1;
-	/*margin-top: 14%;*/
-    	margin-bottom: 10px;
+	margin-top: 25px;
+    	bottom: 150px;
 	}
 
 	/*@media (max-width: 768px) {
