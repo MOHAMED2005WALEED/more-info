@@ -898,7 +898,7 @@ h1 {
   		justify-content: space-between;
    		width: 90%;
 		margin: 0% 5%;
-   	 	/*z-index: 2;*/
+   	 	z-index: 2;
 		align-content: space-around;
     		flex-wrap: wrap;
     		flex-direction: row;
@@ -926,10 +926,10 @@ h1 {
     		gap: 10px;
     		position: absolute;
     		bottom: 22px;
-    		margin-top: 900px;
+    		top: 900px;
     		max-width: 100%; 
     		overflow: hidden; 
-    		z-index: 0; 
+    		z-index: 3; 
 	}
 
 	@media (max-width: 768px) {
