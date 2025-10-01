@@ -42,36 +42,3 @@ function displayCertifications(certifications) {
 window.onload = () => {
     displayCertifications(certifications);
 };
-
-
-        let currentIndex = 0;
-        const certificates = document.querySelectorAll('.ccertificate');
-        const thumbnails = document.querySelectorAll('.thumbnail');
-
-        function showCertificate(direction) {
-            certificates[currentIndex].classList.remove('show');
-            thumbnails[currentIndex].classList.remove('active');
-
-            if (direction === 'right') {
-                currentIndex = (currentIndex + 1) % certificates.length;
-            } else if (direction === 'left') {
-                currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
-            }
-
-            certificates[currentIndex].classList.add('show');
-            thumbnails[currentIndex].classList.add('active');
-        }
-
-        function selectCertificate(index) {
-            certificates[currentIndex].classList.remove('show');
-            thumbnails[currentIndex].classList.remove('active');
-
-            currentIndex = index;
-
-            certificates[currentIndex].classList.add('show');
-            thumbnails[currentIndex].classList.add('active');
-        }
-
-        // Initialize the first certificate and thumbnail
-        certificates[currentIndex].classList.add('show');
-        thumbnails[currentIndex].classList.add('active');
