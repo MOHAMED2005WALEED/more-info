@@ -4,550 +4,755 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mohamed Wajihadeen Mohamed Waleed - Professional Portfolio</title>
+    <title>Mohamed Wajihadeen Mohamed Waleed - Modern Portfolio</title>
+    <meta name="description" content="Full-Stack Web Developer & Network Technician specializing in CCNA, React, Node.js, and modern web technologies">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://portfolio-5ff36.web.app/assets/logo.png">
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("vm4pR01WuWObBIS3W");
+        })();
+    </script>
 </head>
 <body>
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+        <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="#certificates" class="nav-link"><i class="fas fa-certificate"></i> Certificates</a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+
     <!-- Header Section with Profile Picture -->
-    <header class="header">
+    <header class="modern-header">
         <div class="container">
-            <!-- Profile Picture -->
-            <div class="profile-img-container">
-                <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img">
+            <div class="header-content">
+                <!-- Profile Picture with Animation -->
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-img-container">
+                        <img src="DSC6284_01.jpg" alt="Mohamed Waleed" class="profile-img">
+                    </div>
+                </div>
+                
+                <div class="header-text">
+                    <h1 class="glitch-text" data-text="Mohamed Wajihadeen Mohamed Waleed">Mohamed Wajihadeen Mohamed Waleed</h1>
+                    <div class="typing-container">
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="subtitle">Passionate about Technology, Innovation & Connectivity 🚀</p>
+                    
+                    <div class="header-buttons">
+                        <a href="uploads/Waleed_CV.pdf" target="_blank" class="modern-btn primary-btn">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="modern-btn secondary-btn">
+                            <i class="fas fa-paper-plane"></i> Get in Touch
+                        </a>
+                    </div>
+                </div>
             </div>
-            <h1>Mohamed Wajihadeen Mohamed Waleed</h1>
-            <p>Professional Web Developer | Passionate about Technology & Innovation</p>
         </div>
     </header>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="modern-section fade-in">
         <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm <strong>Mohamed Wajihadeen Mohamed Waleed</strong>, a passionate and driven web developer 
-            from Sri Lanka. I specialize in building responsive, interactive, and user-friendly websites. 
-            With a strong foundation in front-end and back-end development, I am continuously learning new technologies 
-            and techniques to improve my skills.
-        </p> <br>
-        <p>
-            I believe in writing clean, scalable, and maintainable code, and I am always excited to tackle 
-            new challenges in the field of web development. I love working with <strong>React</strong>, <strong>Node.js</strong>, 
-            and <strong>MongoDB</strong> to create full-stack web applications that deliver exceptional user experiences.
-        </p> <br>
-        <p>
-            I am also passionate about contributing to open-source projects and collaborating with like-minded individuals 
-            to build solutions that make a positive impact. You can learn more about my work on my <a href="https://github.com/MOHAMED2005WALEED" target="_blank">GitHub</a> and connect with me on <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">LinkedIn</a>.
-
-            </p>
-            <a href="uploads/CV.pdf" target="_blank" class="ddownload-link">Download CV</a><br>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Frontend Frameworks (React, Vue.js)</li>
-                <li>Backend Development (Node.js, Express)</li>
-                <li>Database Management (MongoDB, MySQL)</li>
-                <li>Version Control (Git, GitHub)</li>
-                <li>Responsive Web Design</li>
-                <li>Problem Solving & Debugging</li>
-                <!-- Add any additional skills -->
-            </ul>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="ssection" style="text-align: center;">
-    <div class="ccontainer" style="text-align: center;">
-        <!-- Profile Section -->
-        <div class="profile">
-            <div class="profile-image">
-                <img src="IMG_20240803_165730_105.webp" alt="Profile Picture">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
             </div>
-            <h1>𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h1>
-            <p class="bio">Connecting the dots between dreams and reality ✨</p>
+            
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Full-Stack Developer</h3>
+                    <p>Specialized in creating responsive, interactive, and user-friendly web applications using modern technologies like React, Node.js, and MongoDB.</p>
+                </div>
+                
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Technician</h3>
+                    <p>Pursuing NVQ Level 4 – Computer Network Technician (CISCO CCNAv7) at NVTI, Narahenpita. Expert in LAN/WAN, VLANs, DHCP, and Routing.</p>
+                </div>
+                
+                <div class="about-card glass-card">
+                    <div class="card-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Tech Enthusiast</h3>
+                    <p>Passionate about learning, problem-solving, and contributing to open-source projects. Always exploring new technologies.</p>
+                </div>
+            </div>
+            
+            <div class="about-text glass-card">
+                <p class="highlight-text">
+                    Hi, I'm <strong>Mohamed Wajihadeen Mohamed Waleed</strong>, a passionate 
+                    <strong>Full-Stack Web Developer</strong> and <strong>Network Technician</strong> from Sri Lanka 🇱🇰
+                </p>
+                <p>
+                    With a strong foundation in front-end and back-end development, I continuously explore new technologies and frameworks to enhance my skills. I enjoy working with React, Node.js, and MongoDB to build scalable, modern full-stack applications.
+                </p>
+                <p>
+                    I'm deeply passionate about learning, problem-solving, and contributing to open-source projects. Let's build something amazing together!
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-icon" aria-label="Credly">
+                        <i class="fas fa-award"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <!-- Social Media Links -->
-        <div class="links">
-            <a href="https://www.instagram.com/waleed_2005" target="_blank">
-                <i class="fab fa-instagram"></i> Instagram
-            </a>
-            <a href="https://www.tiktok.com/@walii..official" target="_blank">
-                <i class="fab fa-tiktok"></i> TikTok
-            </a>
-            <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">
-                <i class="fab fa-whatsapp"></i> WhatsApp
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100075124244357&mibextid=ZbWKwL" target="_blank">
-                <i class="fab fa-facebook"></i> Facebook
-            </a>
-            <a href="https://x.com/WALEED_2005" target="_blank">
-                <i class="fab fa-twitter"></i> Twitter (X)
-            </a>
-            <a href="https://www.snapchat.com/add/waleed20050325" target="_blank">
-                <i class="fab fa-snapchat"></i> Snapchat
-            </a>
-            <a href="https://github.com/MOHAMED2005WALEED" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://www.threads.net/@waleed_2005" target="_blank">
-                <i class="fab fa-instagram"></i> Threads
-            </a>
-            <a href="https://mohamed2005waleed.github.io/MY-WED/" target="_blank">
-                <i class="fas fa-link"></i> Portfolio
-            </a>
-        </div>
-
-        <!-- YouTube Video -->
-        <div class="youtube">
-            <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section" style="text-align: center;">
+    <section id="skills" class="modern-section fade-in">
         <div class="container">
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e7ea3f1d-4cfa-4a97-b7ec-71205a4d995d" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="00457bae-6f2f-4dde-9173-71d379e74e01" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4d176c74-4fa9-45f4-84f6-8e1cc7ff0aad" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-	    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="e355cb7d-eab8-4d29-b076-23db1e2e1a39" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-	    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="42beb909-3e2a-4426-85d2-e04ab6ee1410" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-         </div>
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-container">
+                <!-- Web Development -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🌐</span>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <!-- Networking -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🛰️</span>
+                        <h3>Networking & IT</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Cisco CCNA</span>
+                        <span class="skill-tag">LAN/WAN</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">NAT</span>
+                        <span class="skill-tag">Routing</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+
+                <!-- AI & Automation -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">🤖</span>
+                        <h3>AI & Automation</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Generative AI</span>
+                        <span class="skill-tag">AI for Business</span>
+                        <span class="skill-tag">Responsible AI</span>
+                        <span class="skill-tag">Microsoft Copilot</span>
+                        <span class="skill-tag">DevOps</span>
+                    </div>
+                </div>
+
+                <!-- Programming -->
+                <div class="skill-category glass-card">
+                    <div class="category-header">
+                        <span class="category-icon">💻</span>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Software Engineering</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="credly-cta glass-card">
+                <i class="fas fa-certificate credly-icon"></i>
+                <h3>View All Certifications</h3>
+                <p>Check out my verified digital badges and certifications on Credly</p>
+                <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" 
+                   target="_blank" 
+                   class="modern-btn primary-btn">
+                    <i class="fas fa-external-link-alt"></i> Visit Credly Profile
+                </a>
+            </div>
+        </div>
     </section>
-    
-    <section id="skills" class="section" style="/*text-align: center;height: 1000px;*/"><!-- </section>  -->
-    <section class="certification-list">
-        <div class="ccertificate" id="ccertificate1">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Professional Practice in Software Development</h2>
-            <p>Issued by: Department of Computer Science & Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Professional_Practice_in_Software_Development_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Professional_Practice_in_Software_Development_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div>
-        </div>
-        <div class="ccertificate" id="ccertificate2">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Server-side Web Programming</h2>
-            <p>Issued by: Department of Information Technology, Faculty of Information Technology, University of Moratuwa</p>
-            <img src="uploads/Server-side_Web_Programming_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Server-side_Web_Programming_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div>
-        </div>
-        <div class="ccertificate" id="ccertificate3">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Front-End Web Development</h2>
-            <p>Issued by: Department of Information Technology, Faculty of Information Technology, University of Moratuwa</p>
-            <img src="uploads/Front-End_Web_Development_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Front-End_Web_Development_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate4">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Web Design for Beginners</h2>
-            <p>Issued by: Department of Information Technology, Faculty of Information Technology, University of Moratuwa</p>
-            <img src="uploads/Web_Design_for_Beginners_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Web_Design_for_Beginners_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate5">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Python Programming</h2>
-            <p>Issued by: Department of Computer Science & Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Python_Programming_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Python_Programming_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate6">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Python for Beginners</h2>
-            <p>Issued by: Department of Computer Science & Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Python_for_Beginners_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Python_for_Beginners_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate7">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Agile Project Management in ICT Projects</h2>
-            <p>Issued by: Department of Computer Science and Engineering,Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Agile_Project_Management_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Agile_Project_Management_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate8">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Foundations of Project Management</h2>
-            <p>Issued by: Department of Civil Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Foundations_of_Project_Management_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Foundations_of_Project_Management_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate9">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Project Communication and Stakeholder Management</h2>
-            <p>Issued by: Department of Civil Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Project_Scope_and_Schedule_Management_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Project_Scope_and_Schedule_Management_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate10">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Project Contract Law and Management</h2>
-            <p>Issued by: Department of Civil Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Project_Contract_Law_and_Management_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Project_Contract_Law_and_Management_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate11">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Project Communication and Stakeholder Management</h2>
-            <p>Issued by: Department of Civil Engineering, Faculty of Engineering, University of Moratuwa</p>
-            <img src="uploads/Project_Communication_and_Stakeholder_Management_E-Certificate.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/Project_Communication_and_Stakeholder_Management_E-Certificate.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate12">
-        <!-- Example of a certification entry (PNG) -->
-        <div class="certification">
-            <h2>ISC2</h2>
-            <p>Issued by: International Information System Security Certification Consortium</p>
-            <img src="uploads/isc2-candidate.png" alt="Certificate 3" class="certificate-img"><br>
-            <p><a href="uploads/isc2-candidate.png" target="_blank" class="download-link">Download PNG Certificate</a></p>
-        </div></div>
-        <div class="ccertificate" id="ccertificate13">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Domain 1: Security Principles</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Domain 1 Security Principles.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Domain 1 Security Principles.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate14">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Domain 2: Incident Response, Business Continuity and Disaster Recovery Concepts</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Domain 2 Incidents Response, Business Continuity and Disaster Recovery Concepts.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Domain 2 Incidents Response, Business Continuity and Disaster Recovery Concepts.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate15">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Domain 3: Access Control Concepts</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Domain 3 Access Controls Concepts.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Domain 3 Access Controls Concepts.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate16">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Domain 4: Network Security</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Domain 4 Network Security.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Domain 4 Network Security.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate17">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Domain 5: Security Operations</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Domain 5 Securitys Operations.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Domain 5 Securitys Operations.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate18">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Course Pre-assessment</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CC Course Pre-assessment.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CC Course Pre-assessment.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate19">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Course Conclusion & Final Assessment</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CCCourse Conclusion & Finalt Assessment.png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CCCourse Conclusion & Finalt Assessment.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate20">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CC Certified in Cybersecurity (CC)</h2>
-            <p>Learner ID: b621ed8a-a322-4fa1-b1f6-4768cb2f6c5b</p>
-            <img src="uploads/CCCertified in Cybersecurity (CC).png" alt="Certificate 1" class="certificate-img"><br>
-            <a href="uploads/CCCertified in Cybersecurity (CC).pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate21">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>What Is Generative AI?</h2>
-            <p>Just finished the course “What Is Generative AI?” by Pinar Seyhan Demirdag! <a href="https://www.linkedin.com/learning/certificates/e960e61621ceed20ad157b49bd1564e0e67e179703fd6fd3dca2d0df2d5dd3a1?trk=share_certificate" target="_blank" class="">Check it out:</a></p>
-            <img src="uploads/CertificateOfCompletion_What Is Generative AI.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/CertificateOfCompletion_What Is Generative AI.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate22">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Generative AI: The Evolution of Thoughtful Online Search</h2>
-            <p>Just finished the course “Generative AI: The Evolution of Thoughtful Online Search” by Ashley Kennedy! <a href="https://www.linkedin.com/learning/certificates/11ccc9f4ffed38a8f0a3d3fa0ad3c9212a923e52628e9ca03ff675bdd90796ef?trk=share_certificate" target="_blank" class="">Check it out:</a></p>
-            <img src="uploads/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate23">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Streamlining Your Work with Microsoft Copilot</h2>
-            <p>Just finished the course “Streamlining Your Work with Microsoft Copilot” by Nick Brazzi! <a href="https://www.linkedin.com/learning/certificates/2fcc82d706593432fb03b10fbf420a64c400eeca76255fccf5908d9a1a42cb30?trk=share_certificate" target="_blank" class="">Check it out:</a></p>
-            <img src="uploads/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/Streamlining Your Work with Microsoft Copilot.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate24">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Introduction to Artificial Intelligence (2023)</h2>
-            <p>Just finished the course “Introduction to Artificial Intelligence (2023)” by Doug Rose! <a href="https://www.linkedin.com/learning/certificates/b7ac0a3660a8a13ec8766f3f2c8b82811a0d3aa6726ecc86efbfc96d6707d54b?trk=share_certificate" target="_blank" class="">Check it out:</a></p>
-            <img src="uploads/CertificateOfCompletion_Introduction to Artificial Intelligence 2023.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/CertificateOfCompletion_Introduction to Artificial Intelligence 2023.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate25">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Career Essentials in Generative AI by Microsoft and LinkedIn</h2>
-            <p>Just finished the learning path “Career Essentials in Generative AI by Microsoft and LinkedIn”! <a href="https://www.linkedin.com/learning/certificates/b82319893979cb6bfd2cbd64ca49ab4339ecb68bfe662ca9c5840f7bf53d7fe6?trk=share_certificate" target="_blank" class="">Check it out:</a></p>
-            <img src="uploads/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate26">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Linux Unhatched</h2>
-            <p>Issued by <a href="https://www.credly.com/org/cisco" target="_blank" class="">Cisco</a></p>
-            <img src="uploads/LinuxUnhatched20241203-26-aeebkl.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/LinuxUnhatched20241203-26-aeebkl.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate27">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>SLIIT UNI</h2>
-            <p>School: Centre for Open and Distance Education - <a href="https://code.sliit.org/" target="_blank" class="">SLIIT</a></p>
-            <img src="uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2024-11-27.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2024-11-27.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate28">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>Computer Hardware Basics</h2>
-            <p>Issued by <a href="https://www.credly.com/badges/e355cb7d-eab8-4d29-b076-23db1e2e1a39/public_url" target="_blank" class="">Cisco</a></p>
-            <img src="uploads/certificate_wajiwaleed-gmail-com_c57c725d-02bf-4dfd-b996-45fcb40663d5.png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/certificate_wajiwaleed-gmail-com_c57c725d-02bf-4dfd-b996-45fcb40663d5.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
-        <div class="ccertificate" id="ccertificate29">
-        <!-- Example of a certification entry (PDF) -->
-        <div class="certification">
-            <h2>CCNA: Introduction to Networks</h2>
-            <p>Issued by <a href="https://www.credly.com/org/cisco" target="_blank" class="">Cisco</a></p>
-            <img src="uploads/certificate_wajiwaleed-gmail-com_b039ef56-0375-4342-8889-f907ba316858 (1).png" alt="Certificate 3" class="certificate-img"><br>
-            <a href="uploads/CCNAITNUpdated20250723-31-ovgeq6.pdf" target="_blank" class="download-link">Download PDF Certificate</a>
-        </div></div>
 
-        <!-- Example of a certification entry (Image) 
-        <div class="certification">
-            <h2>ISC2</h2>
-            <p>Issued by: ABC Institute</p>
-            <img src="uploads/MOHAMED_WAJIHADEEN_MOHAMED_WALEED20241127-280-1xzp43h.jpg" alt="Certificate 2" class="certificate-img"><br>
-            <p><a href="uploads/MOHAMED_WAJIHADEEN_MOHAMED_WALEED20241127-280-1xzp43h.jpg" target="_blank" class="download-link">Download Image Certificate</a></p>
-        </div>
-        -->
+    <!-- Projects Section -->
+    <section id="projects" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="title-underline"></div>
+            </div>
 
-        <!-- Example of a certification entry (PNG) 
-        <div class="certification">
-            <h2>Certification 3: Graphic Design</h2>
-            <p>Issued by: DEF School</p>
-            <img src="uploads/isc2-candidate.png" alt="Certificate 3" class="certificate-img"><br>
-            <p><a href="uploads/isc2-candidate.png" target="_blank" class="download-link">Download PNG Certificate</a></p>
-        </div>
-        -->
+            <!-- Project Stats -->
+            <div class="project-stats">
+                <div class="stat-card glass-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>11</h3>
+                    <p>Total Projects</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>8</h3>
+                    <p>Networking</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-server"></i>
+                    <h3>1</h3>
+                    <p>Server</p>
+                </div>
+                <div class="stat-card glass-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>1</h3>
+                    <p>Security</p>
+                </div>
+            </div>
 
-        <!-- More certifications can be added here -->
-	    
- 
-	            	    
-    <div class="nav-buttons">
-        <button class="button" onclick="showCertificate('left')" style="z-index: 2;"><i class="fas fa-arrow-left"></i></button>
-        <button class="button" onclick="showCertificate('right')" style="z-index: 2;"><i class="fas fa-arrow-right"></i></button>
-    </div>
-	   
-	    
-	<br><br><br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	    <br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  <!--    <br><br><br><br><br><br><br><br><br><br><br>-->
-	    
-    <div class="thumbnails">
-        <div class="thumbnail" onclick="selectCertificate(0)">
-            <img src="uploads/Professional_Practice_in_Software_Development_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(1)">
-            <img src="uploads/Server-side_Web_Programming_E-Certificate.png" alt="Certificate 2" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(2)">
-            <img src="uploads/Front-End_Web_Development_E-Certificate.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(3)">
-            <img src="uploads/Web_Design_for_Beginners_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(4)">
-            <img src="uploads/Python_Programming_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(5)">
-            <img src="uploads/Python_for_Beginners_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(6)">
-            <img src="uploads/Agile_Project_Management_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(7)">
-            <img src="uploads/Foundations_of_Project_Management_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(8)">
-            <img src="uploads/Project_Scope_and_Schedule_Management_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(9)">
-            <img src="uploads/Project_Contract_Law_and_Management_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(10)">
-            <img src="uploads/Project_Communication_and_Stakeholder_Management_E-Certificate.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(11)">
-            <img src="uploads/isc2-candidate.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(12)">
-            <img src="uploads/CC Domain 1 Security Principles.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(13)">
-            <img src="uploads/CC Domain 2 Incidents Response, Business Continuity and Disaster Recovery Concepts.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(14)">
-            <img src="uploads/CC Domain 3 Access Controls Concepts.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(15)">
-            <img src="uploads/CC Domain 4 Network Security.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(16)">
-            <img src="uploads/CC Domain 5 Securitys Operations.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(17)">
-            <img src="uploads/CC Course Pre-assessment.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(18)">
-            <img src="uploads/CCCourse Conclusion & Finalt Assessment.png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(19)">
-            <img src="uploads/CCCertified in Cybersecurity (CC).png" alt="Certificate 1" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(20)">
-            <img src="uploads/CertificateOfCompletion_What Is Generative AI.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(21)">
-            <img src="uploads/CertificateOfCompletion_Generative AI The Evolution of Thoughtful Online Search.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(22)">
-            <img src="uploads/CertificateOfCompletion_Streamlining Your Work with Microsoft Copilot.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(23)">
-            <img src="uploads/CertificateOfCompletion_Introduction to Artificial Intelligence 2023.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(24)">
-            <img src="uploads/CertificateOfCompletion_Career Essentials in Generative AI by Microsoft and LinkedIn.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(25)">
-            <img src="uploads/LinuxUnhatched20241203-26-aeebkl.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(26)">
-            <img src="uploads/MOHAMED WAJIHADEEN MOHAMED WALEED - 2024-11-27.png" alt="Certificate 3" class="certificate-imgg">
-        </div>
-        <div class="thumbnail" onclick="selectCertificate(27)">
-		<img src="uploads/certificate_wajiwaleed-gmail-com_c57c725d-02bf-4dfd-b996-45fcb40663d5.png" alt="Certificate 3" class="certificate-imgg">
-	</div>
-        <div class="thumbnail" onclick="selectCertificate(28)">
-		<img src="uploads/certificate_wajiwaleed-gmail-com_b039ef56-0375-4342-8889-f907ba316858 (1).png" alt="Certificate 3" class="certificate-imgg">
-	</div>
-        <!--<div class="thumbnail" onclick="selectCertificate(29)">Cert 9</div>
-        <div class="thumbnail" onclick="selectCertificate(30)">Cert 10</div>-->
-    </div>
-	    
-	    
-    <script>
-        let currentIndex = 0;
-        const certificates = document.querySelectorAll('.ccertificate');
-        const thumbnails = document.querySelectorAll('.thumbnail');
+            <!-- Project Filter Buttons -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All Projects
+                </button>
+                <button class="filter-btn" data-filter="server">
+                    <i class="fas fa-server"></i> Server
+                </button>
+                <button class="filter-btn" data-filter="networking">
+                    <i class="fas fa-network-wired"></i> Networking
+                </button>
+                <button class="filter-btn" data-filter="hardware">
+                    <i class="fas fa-tools"></i> Hardware
+                </button>
+                <button class="filter-btn" data-filter="security">
+                    <i class="fas fa-shield-alt"></i> Security
+                </button>
+            </div>
 
-        function showCertificate(direction) {
-            certificates[currentIndex].classList.remove('show');
-            thumbnails[currentIndex].classList.remove('active');
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- NEW PROJECT 1: Wi-Fi NVR System -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/nvr1.jpg" alt="Wi-Fi NVR System" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Wi-Fi+NVR+System'">
+                        <div class="project-gallery">
+                            <img src="projects/nvr1.jpg" onclick="openProjectModal('nvr', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/nvr2.jpg" onclick="openProjectModal('nvr', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/nvr3.jpg" onclick="openProjectModal('nvr', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('nvr', 0)">+6 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wi-Fi NVR Surveillance System</h3>
+                        <p>Complete configuration of Wi-Fi NVR system with dual LAN and Wi-Fi connectivity. Wireless camera pairing, mobile app access, and smooth live streaming capabilities.</p>
+                        <div class="project-tags">
+                            <span>NVR System</span>
+                            <span>Wi-Fi</span>
+                            <span>CCTV</span>
+                            <span>Remote Monitoring</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('nvr', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-            if (direction === 'right') {
-                currentIndex = (currentIndex + 1) % certificates.length;
-            } else if (direction === 'left') {
-                currentIndex = (currentIndex - 1 + certificates.length) % certificates.length;
-            }
+                <!-- NEW PROJECT 2: Access Point Configuration -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ap1.jpg" alt="Access Point Config" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=Access+Point+Configuration'">
+                        <div class="project-gallery">
+                            <img src="projects/ap1.jpg" onclick="openProjectModal('accesspoint', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ap2.jpg" onclick="openProjectModal('accesspoint', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ap3.jpg" onclick="openProjectModal('accesspoint', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('accesspoint', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Wireless Access Point Configuration</h3>
+                        <p>Complete wireless access point setup with SSID configuration, WPA2 security implementation, and wireless connectivity verification through IP checks and ping tests.</p>
+                        <div class="project-tags">
+                            <span>Linksys</span>
+                            <span>WPA2</span>
+                            <span>Wireless</span>
+                            <span>SSID Config</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('accesspoint', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-            certificates[currentIndex].classList.add('show');
-            thumbnails[currentIndex].classList.add('active');
-        }
+                <!-- NEW PROJECT 3: CCNA Practical Assessment -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/ccna1.jpg" alt="CCNA Assessment" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCNA+Assessment'">
+                        <div class="project-gallery">
+                            <img src="projects/ccna1.jpg" onclick="openProjectModal('ccnatest', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/ccna2.jpg" onclick="openProjectModal('ccnatest', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/ccna3.jpg" onclick="openProjectModal('ccnatest', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('ccnatest', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCNA Semester 02 Practical Skills Assessment</h3>
+                        <p>Comprehensive networking practical test demonstrating VLAN configuration, trunking, inter-VLAN routing, EtherChannel, DHCP services, IPv6 setup, and port security on real Cisco equipment.</p>
+                        <div class="project-tags">
+                            <span>CCNAv7</span>
+                            <span>VLANs</span>
+                            <span>Trunking</span>
+                            <span>IPv6</span>
+                            <span>Port Security</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('ccnatest', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-        function selectCertificate(index) {
-            certificates[currentIndex].classList.remove('show');
-            thumbnails[currentIndex].classList.remove('active');
+                <!-- NEW PROJECT 4: CCTV DVR Setup -->
+                <div class="project-item glass-card" data-category="security">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dvr1.jpg" alt="CCTV DVR" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=CCTV+DVR+Setup'">
+                        <div class="project-gallery">
+                            <img src="projects/dvr1.jpg" onclick="openProjectModal('cctv', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/dvr2.jpg" onclick="openProjectModal('cctv', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/dvr3.jpg" onclick="openProjectModal('cctv', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('cctv', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CCTV DVR Setup & Integration</h3>
+                        <p>Professional CCTV system deployment with camera configuration, network and remote access setup, secure system login, and mobile/PC monitoring capabilities.</p>
+                        <div class="project-tags">
+                            <span>CCTV</span>
+                            <span>DVR</span>
+                            <span>Remote Access</span>
+                            <span>Surveillance</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('cctv', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-            currentIndex = index;
+                <!-- NEW PROJECT 5: DHCP Relay Agent -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-badge">NEW</div>
+                    <div class="project-images">
+                        <img src="projects/dhcp1.jpg" alt="DHCP Relay" class="project-main-img" onerror="this.src='https://via.placeholder.com/400x250?text=DHCP+Relay+Agent'">
+                        <div class="project-gallery">
+                            <img src="projects/dhcp1.jpg" onclick="openProjectModal('dhcprelay', 0)" onerror="this.src='https://via.placeholder.com/60x45?text=1'">
+                            <img src="projects/dhcp2.jpg" onclick="openProjectModal('dhcprelay', 1)" onerror="this.src='https://via.placeholder.com/60x45?text=2'">
+                            <img src="projects/dhcp3.jpg" onclick="openProjectModal('dhcprelay', 2)" onerror="this.src='https://via.placeholder.com/60x45?text=3'">
+                            <span class="more-photos" onclick="openProjectModal('dhcprelay', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>DHCP Relay Agent Configuration</h3>
+                        <p>Multi-router DHCP relay implementation with static routing, Windows Server OS configuration, and broadcast to unicast/multicast message conversion across network segments.</p>
+                        <div class="project-tags">
+                            <span>DHCP Relay</span>
+                            <span>Static Routing</span>
+                            <span>Server OS</span>
+                            <span>Multi-Router</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('dhcprelay', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-            certificates[currentIndex].classList.add('show');
-            thumbnails[currentIndex].classList.add('active');
-        }
+                <!-- EXISTING PROJECTS -->
+                <!-- Project: Server Deployment -->
+                <div class="project-item glass-card" data-category="server">
+                    <div class="project-images">
+                        <img src="projects/server1.jpg" alt="Server Project" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/server1.jpg" onclick="openProjectModal('server', 0)">
+                            <img src="projects/server2.jpg" onclick="openProjectModal('server', 1)">
+                            <img src="projects/server3.jpg" onclick="openProjectModal('server', 2)">
+                            <span class="more-photos" onclick="openProjectModal('server', 0)">+6 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Windows Server Deployment</h3>
+                        <p>Complete practical server deployment with RAID configuration, Active Directory, DNS, DHCP & Windows Deployment Services</p>
+                        <div class="project-tags">
+                            <span>Windows Server</span>
+                            <span>RAID</span>
+                            <span>Active Directory</span>
+                            <span>DNS/DHCP</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('server', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
 
-        // Initialize the first certificate and thumbnail
-        certificates[currentIndex].classList.add('show');
-        thumbnails[currentIndex].classList.add('active');
-        
-		const thumbnailss = document.querySelectorAll('.thumbnail');
-			thumbnailss.forEach((thumbnail, index) => {
-    			thumbnail.addEventListener('click', () => {
-        			thumbnails.forEach((thumb) => thumb.classList.remove('active'));
-        			thumbnail.classList.add('active');
-    			});
-			});
-    </script>
+                <!-- Project: Cisco ACLs -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/cisco1.jpg" alt="Cisco Project" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/cisco1.jpg" onclick="openProjectModal('cisco', 0)">
+                            <img src="projects/cisco2.jpg" onclick="openProjectModal('cisco', 1)">
+                            <img src="projects/cisco3.jpg" onclick="openProjectModal('cisco', 2)">
+                            <span class="more-photos" onclick="openProjectModal('cisco', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cisco Extended ACLs Security</h3>
+                        <p>Secured custom web page with Cisco Extended ACLs. Tested access control for all devices including phones and laptops via Wi-Fi</p>
+                        <div class="project-tags">
+                            <span>Cisco Router</span>
+                            <span>ACLs</span>
+                            <span>Security</span>
+                            <span>Wi-Fi</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('cisco', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project: Mac Repair -->
+                <div class="project-item glass-card" data-category="hardware">
+                    <div class="project-images">
+                        <img src="projects/mac1.jpg" alt="Mac Repair" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/mac1.jpg" onclick="openProjectModal('mac', 0)">
+                            <img src="projects/mac2.jpg" onclick="openProjectModal('mac', 1)">
+                            <img src="projects/mac3.jpg" onclick="openProjectModal('mac', 2)">
+                            <span class="more-photos" onclick="openProjectModal('mac', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mac Desktop & Workstation Repair</h3>
+                        <p>Full service repair including power supply and display replacement. Successfully restored essential tech</p>
+                        <div class="project-tags">
+                            <span>Mac Desktop</span>
+                            <span>Hardware</span>
+                            <span>Repair</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('mac', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project: ISP Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/isp1.jpg" alt="ISP Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/isp1.jpg" onclick="openProjectModal('isp', 0)">
+                            <img src="projects/isp2.jpg" onclick="openProjectModal('isp', 1)">
+                            <img src="projects/isp3.jpg" onclick="openProjectModal('isp', 2)">
+                            <span class="more-photos" onclick="openProjectModal('isp', 0)">+1 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ISP Environment Simulation</h3>
+                        <p>Simulated ISP environment using 4G router, configured Cisco router with NAT overload (PAT)</p>
+                        <div class="project-tags">
+                            <span>4G Router</span>
+                            <span>NAT/PAT</span>
+                            <span>Cisco</span>
+                            <span>Packet Tracer</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('isp', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project: ASD Lab -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/asd1.jpg" alt="ASD Lab" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/asd1.jpg" onclick="openProjectModal('asd', 0)">
+                            <img src="projects/asd2.jpg" onclick="openProjectModal('asd', 1)">
+                            <img src="projects/asd3.jpg" onclick="openProjectModal('asd', 2)">
+                            <span class="more-photos" onclick="openProjectModal('asd', 0)">+17 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>ASD Lab Network Infrastructure</h3>
+                        <p>Built complete wired and wireless network for ASD Lab including CAT6 cabling, access point installation</p>
+                        <div class="project-tags">
+                            <span>CAT6 Cabling</span>
+                            <span>Access Points</span>
+                            <span>LAN Setup</span>
+                            <span>NVTI</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('asd', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project: NAT OSPF -->
+                <div class="project-item glass-card" data-category="networking">
+                    <div class="project-images">
+                        <img src="projects/nat1.jpg" alt="NAT OSPF" class="project-main-img">
+                        <div class="project-gallery">
+                            <img src="projects/nat1.jpg" onclick="openProjectModal('nat', 0)">
+                            <img src="projects/nat2.jpg" onclick="openProjectModal('nat', 1)">
+                            <img src="projects/nat3.jpg" onclick="openProjectModal('nat', 2)">
+                            <span class="more-photos" onclick="openProjectModal('nat', 0)">+2 more</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>NAT Overload with OSPF</h3>
+                        <p>Implemented Cisco CCNA NAT Overload setup with OSPF routing protocol integration</p>
+                        <div class="project-tags">
+                            <span>NAT Overload</span>
+                            <span>OSPF</span>
+                            <span>Cisco CCNA</span>
+                            <span>Routing</span>
+                        </div>
+                        <button class="view-project-btn" onclick="openProjectModal('nat', 0)">
+                            <i class="fas fa-images"></i> View All Photos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    </section>  
 
-    
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <button class="modal-close" onclick="closeProjectModal()" aria-label="Close">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="modal-prev" onclick="changeProjectPhoto(-1)" aria-label="Previous">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="modal-next" onclick="changeProjectPhoto(1)" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="Project Photo">
+            <div class="modal-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <span class="photo-counter">
+                    <span id="currentPhoto">1</span> / <span id="totalPhotos">10</span>
+                </span>
+            </div>
+        </div>
+        <div class="modal-thumbnails" id="modalThumbnails"></div>
+    </div>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="modern-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certificates-carousel">
+                <div class="carousel-main">
+                    <button class="carousel-btn prev-btn" onclick="navigateCert(-1)" aria-label="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="certificate-display"></div>
+                    <button class="carousel-btn next-btn" onclick="navigateCert(1)" aria-label="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="carousel-thumbnails"></div>
+                <div class="carousel-counter">
+                    <span class="current-cert">1</span> / <span class="total-certs">30</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="modern-section fade-in">
         <div class="container">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>Email: <a href="mailto:wajiwaleed@gmail.com">wajiwaleed@gmail.com</a></li>
-                <li>Phone: <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">+94 76 850 350 8</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/MOHAMED2005WALEED" target="_blank">GitHub Profile</a></li>
-                <li>Twitter: <a href="https://x.com/_waleed_2005_" target="_blank">Twitter Profile</a></li>
-            </ul>
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-grid">
+                <div class="contact-card glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:wajiwaleed@gmail.com">wajiwaleed@gmail.com</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank">+94 76 850 350 8</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/mohamed-waleed-669457227" target="_blank">Connect on LinkedIn</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank">View My Projects</a>
+                </div>
+            </div>
+
+            <div class="contact-form-container glass-card" style="margin-top: 50px;">
+                <h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+                <div id="form-status" class="form-status"></div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-profile glass-card">
+                <div class="social-avatar">
+                    <img src="IMG_20240803_165730_105.webp" alt="Profile">
+                </div>
+                <h2 class="social-name">𝕎𝕒𝕝𝕚𝕚..𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝</h2>
+                <p class="social-bio">Connecting the dots between dreams and reality ✨</p>
+                
+                <div class="social-grid">
+                    <a href="https://www.credly.com/users/mohamed-wajihadeen-mohamed-waleed" target="_blank" class="social-card">
+                        <i class="fas fa-award"></i>
+                        <span>Credly</span>
+                    </a>
+                    <a href="https://www.instagram.com/waleed_2005" target="_blank" class="social-card">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@walii..official" target="_blank" class="social-card">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok</span>
+                    </a>
+                    <a href="https://wa.me/message/MEXSYHLOWL5CD1" target="_blank" class="social-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100075124244357" target="_blank" class="social-card">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://x.com/WALEED_2005" target="_blank" class="social-card">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.snapchat.com/add/waleed20050325" target="_blank" class="social-card">
+                        <i class="fab fa-snapchat"></i>
+                        <span>Snapchat</span>
+                    </a>
+                    <a href="https://github.com/MOHAMED2005WALEED" target="_blank" class="social-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+
+                <div class="youtube-embed">
+                    <iframe src="https://www.youtube.com/embed/9WanQhhrsd4" 
+                            title="YouTube Video"
+                            frameborder="0" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p style="text-shadow: 1px 1px 2px #888888;">&copy; 2021 Mohamed Waleed. All Rights Reserved.</p>
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Mohamed Waleed. Crafted with <i class="fas fa-heart"></i> and Code</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" onclick="scrollToTop()" aria-label="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
