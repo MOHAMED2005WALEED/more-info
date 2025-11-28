@@ -1,17 +1,18 @@
 // ============================================
-// MODERN PORTFOLIO - COMPLETE JAVASCRIPT
-// With Loading Animation & EmailJS Contact Form
+// iOS 26 LIQUID GLASS PORTFOLIO - JAVASCRIPT
+// Enhanced Animations & Interactions
 // ============================================
 
 // ============================================
-// LOADING SCREEN
+// LOADING SCREEN WITH SMOOTH TRANSITION
 // ============================================
 window.addEventListener('load', () => {
     const loadingScreen = document.getElementById('loading-screen');
     
     setTimeout(() => {
         loadingScreen.classList.add('hidden');
-    }, 2000);
+        document.body.style.overflow = 'auto';
+    }, 2500);
     
     // Performance monitoring
     if (window.performance) {
@@ -452,7 +453,7 @@ let currentProject = '';
 let currentPhotoIndex = 0;
 
 // ============================================
-// TYPING ANIMATION
+// LIQUID GLASS TYPING ANIMATION
 // ============================================
 const typingTexts = [
     "Full-Stack Web Developer",
@@ -499,7 +500,7 @@ function typeText() {
 }
 
 // ============================================
-// SCROLL ANIMATIONS
+// ENHANCED SCROLL ANIMATIONS
 // ============================================
 function initScrollAnimations() {
     const sections = document.querySelectorAll('.modern-section');
@@ -628,7 +629,7 @@ function initCertificateCarousel() {
 // PROJECTS SECTION FUNCTIONALITY
 // ============================================
 
-// Project filtering
+// Project filtering with liquid animation
 function initProjectFilter() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const projectItems = document.querySelectorAll('.project-item');
@@ -794,10 +795,222 @@ function highlightActiveNav() {
 }
 
 // ============================================
+// LIQUID GLASS PARALLAX EFFECT
+// ============================================
+function initParallaxEffect() {
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const orbs = document.querySelectorAll('.gradient-orb');
+        
+        orbs.forEach((orb, index) => {
+            const speed = (index + 1) * 0.1;
+            orb.style.transform = `translateY(${scrolled * speed}px)`;
+        });
+    });
+}
+
+// ============================================
+// ENHANCED GLASS CARD TILT EFFECT
+// ============================================
+function initGlassCardTilt() {
+    const cards = document.querySelectorAll('.glass-card');
+    
+    cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+            
+            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
+        });
+    });
+}
+
+// ============================================
+// ANIMATED COUNTER FOR STATS
+// ============================================
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            element.textContent = target;
+            clearInterval(timer);
+        } else {
+            element.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+function initCounterAnimation() {
+    const statCards = document.querySelectorAll('.stat-card h3');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = parseInt(entry.target.textContent);
+                animateCounter(entry.target, target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    statCards.forEach(card => observer.observe(card));
+}
+
+// ============================================
+// LIQUID CURSOR EFFECT (OPTIONAL)
+// ============================================
+function initLiquidCursor() {
+    const cursor = document.createElement('div');
+    cursor.style.cssText = `
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(0, 212, 255, 0.6), transparent);
+        pointer-events: none;
+        z-index: 10000;
+        mix-blend-mode: screen;
+        transition: transform 0.1s ease;
+    `;
+    document.body.appendChild(cursor);
+    
+    document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+    });
+    
+    // Grow on interactive elements
+    const interactives = document.querySelectorAll('a, button, .glass-card');
+    interactives.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+            cursor.style.transform = 'scale(2)';
+        });
+        el.addEventListener('mouseleave', () => {
+            cursor.style.transform = 'scale(1)';
+        });
+    });
+}
+
+// ============================================
+// FLOATING NAVIGATION SCROLL EFFECT
+// ============================================
+function initNavScrollEffect() {
+    const nav = document.querySelector('.floating-nav');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            nav.style.transform = 'translateX(-50%) translateY(-100px)';
+        } else {
+            nav.style.transform = 'translateX(-50%) translateY(0)';
+        }
+        
+        lastScroll = currentScroll;
+    });
+}
+
+// ============================================
+// FORM INPUT ANIMATIONS
+// ============================================
+function initFormAnimations() {
+    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.style.transform = 'translateY(-2px)';
+        });
+        
+        input.addEventListener('blur', function() {
+            this.parentElement.style.transform = 'translateY(0)';
+        });
+    });
+}
+
+// ============================================
+// SKILL TAG RIPPLE EFFECT
+// ============================================
+function initSkillTagRipple() {
+    const skillTags = document.querySelectorAll('.skill-tag');
+    
+    skillTags.forEach(tag => {
+        tag.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            const rect = this.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = e.clientX - rect.left - size / 2;
+            const y = e.clientY - rect.top - size / 2;
+            
+            ripple.style.cssText = `
+                position: absolute;
+                width: ${size}px;
+                height: ${size}px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.5);
+                left: ${x}px;
+                top: ${y}px;
+                animation: ripple 0.6s ease-out;
+                pointer-events: none;
+            `;
+            
+            this.style.position = 'relative';
+            this.style.overflow = 'hidden';
+            this.appendChild(ripple);
+            
+            setTimeout(() => ripple.remove(), 600);
+        });
+    });
+}
+
+// Add ripple animation to stylesheet dynamically
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes ripple {
+        to {
+            transform: scale(4);
+            opacity: 0;
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// ============================================
+// PERFORMANCE MONITORING
+// ============================================
+function logPerformanceMetrics() {
+    if (window.performance) {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        const connectTime = perfData.responseEnd - perfData.requestStart;
+        const renderTime = perfData.domComplete - perfData.domLoading;
+        
+        console.log('🎨 iOS 26 Liquid Glass Portfolio - Performance Metrics');
+        console.log(`⚡ Page Load Time: ${pageLoadTime}ms`);
+        console.log(`🔌 Connection Time: ${connectTime}ms`);
+        console.log(`🖼️ Render Time: ${renderTime}ms`);
+    }
+}
+
+// ============================================
 // INITIALIZE EVERYTHING
 // ============================================
 function init() {
-    console.log('🚀 Initializing Modern Portfolio...');
+    console.log('💎 Initializing iOS 26 Liquid Glass Portfolio...');
     
     setTimeout(typeText, 1000);
     initScrollAnimations();
@@ -806,11 +1019,22 @@ function init() {
     initCertificateCarousel();
     initProjectFilter();
     highlightActiveNav();
+    initParallaxEffect();
+    initGlassCardTilt();
+    initCounterAnimation();
+    // initLiquidCursor(); // Optional - uncomment for liquid cursor effect
+    initNavScrollEffect();
+    initFormAnimations();
+    initSkillTagRipple();
+    
+    // Log metrics after initialization
+    setTimeout(logPerformanceMetrics, 1000);
     
     console.log('✅ Portfolio Initialized Successfully!');
     console.log('📊 Total Projects: ' + Object.keys(projectPhotos).length);
     console.log('🎓 Total Certificates: ' + certificates.length);
     console.log('📧 EmailJS Configured');
+    console.log('💎 Liquid Glass Design Active');
 }
 
 // Run initialization
@@ -819,3 +1043,34 @@ if (document.readyState === 'loading') {
 } else {
     init();
 }
+
+// ============================================
+// EASTER EGG: KONAMI CODE
+// ============================================
+let konamiCode = [];
+const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+
+document.addEventListener('keydown', (e) => {
+    konamiCode.push(e.key);
+    konamiCode.splice(-konamiSequence.length - 1, konamiCode.length - konamiSequence.length);
+    
+    if (konamiCode.join('').includes(konamiSequence.join(''))) {
+        document.body.style.animation = 'rainbow 2s linear infinite';
+        
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes rainbow {
+                0% { filter: hue-rotate(0deg); }
+                100% { filter: hue-rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        console.log('🎉 KONAMI CODE ACTIVATED! Rainbow mode enabled!');
+        
+        setTimeout(() => {
+            document.body.style.animation = '';
+            style.remove();
+        }, 5000);
+    }
+});
